@@ -454,14 +454,14 @@ const App = () => (
 
             <Button asChild>
               <a
-                href="https://github.com/dsm23/dsm23-vite-spa-template"
+                href="https://github.com/dsm23/dsm23-vite-shadcn-components-example"
                 className="mr-3"
               >
                 Get started
               </a>
             </Button>
             <Button variant="outline" asChild>
-              <a href="https://vercel.com/new/git/external?repository-url=https://github.com/dsm23/dsm23-vite-spa-template/">
+              <a href="https://vercel.com/new/git/external?repository-url=https://github.com/dsm23/dsm23-vite-shadcn-components-example/">
                 Deploy Now
               </a>
             </Button>

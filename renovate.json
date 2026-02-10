@@ -2,7 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:best-practices",
-    "customManagers:biomeVersions",
     "group:jsUnitTest",
     "group:vite",
     "helpers:pinGitHubActionDigestsToSemver",
@@ -31,7 +30,6 @@
       ]
     }
   ],
-  "ignoreDeps": ["ghcr.io/dsm23/dsm23-vite-spa-template"],
   "packageRules": [
     {
       "internalChecksFilter": "strict",
