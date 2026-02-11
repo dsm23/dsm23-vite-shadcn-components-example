@@ -17,5 +17,6 @@ src/**/*.spec.[jt]sx
 !package.json
 !pnpm-lock.yaml
 !pnpm-workspace.yaml
+!react-router.config.ts
 !tsconfig.*
 !vite.config.ts

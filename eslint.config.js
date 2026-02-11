@@ -13,8 +13,9 @@ import tseslint from "typescript-eslint";
 
 export default defineConfig([
   globalIgnores([
+    ".react-router/",
     "coverage/",
-    "dist/",
+    "build/",
     "playwright-report/",
     "storybook-static/",
     "test-results/",
@@ -86,6 +87,7 @@ export default defineConfig([
           types: "prefer-import",
         },
       ],
+      "react-refresh/only-export-components": "off",
       "no-console": [
         "error",
         {
