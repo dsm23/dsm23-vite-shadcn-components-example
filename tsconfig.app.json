@@ -17,6 +17,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
+    "rootDirs": [".", "./.react-router/types"],
+
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"]
@@ -29,5 +31,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "test-utils"]
+  "include": ["src", "test-utils", ".react-router/types/**/*"]
 }
