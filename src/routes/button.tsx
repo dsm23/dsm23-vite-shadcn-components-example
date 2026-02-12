@@ -1,5 +1,5 @@
 import type { FunctionComponent } from "react";
-import { Button } from "~/components/button";
+import { Button } from "~/components/ui/button";
 import type { Route } from "./+types/home";
 
 const Home: FunctionComponent<Route.ComponentProps> = () => (

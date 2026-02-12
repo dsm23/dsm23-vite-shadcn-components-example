@@ -1,5 +1,4 @@
 import { Laptop, Moon, Sun } from "lucide-react";
-import { Button } from "~/components/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -8,6 +7,7 @@ import {
   DropdownMenuTrigger,
 } from "~/components/dropdown-menu";
 import { useTheme } from "~/components/theme-provider";
+import { Button } from "~/components/ui/button";
 import type { Theme } from "~/components/theme-provider";
 
 const ThemeSwitcher = () => {
