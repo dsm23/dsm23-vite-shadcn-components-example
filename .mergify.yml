@@ -31,20 +31,19 @@ merge_protections:
     if:
       - base = main
     success_conditions:
-      - "title ~=
-        ^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:\\(.+\
-        \\))?:"
+      - "title ~= ^(fix|feat|docs|style|refactor|perf|test|build|ci|chore|revert)(?:\\(.+\\\
+        ))?:"
 
 merge_protections_settings:
-  reporting_method: check-runs
+  auto_merge_conditions: true
   post_comment: true
+  reporting_method: check-runs
 
 merge_queue:
   max_parallel_checks: 1
 
 queue_rules:
   - name: dep-update
-    autoqueue: true
     batch_max_wait_time: 30 min
     queue_conditions: &queue_conditions
       - author = renovate[bot]
@@ -96,9 +95,3 @@ pull_request_rules:
       label:
         add:
           - rebase
-
-  - name: automatic deletion of head branch after merge
-    conditions:
-      - merged
-    actions:
-      delete_head_branch:
